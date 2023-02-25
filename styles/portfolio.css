@@ -1,0 +1,416 @@
+:root {
+  --branding-color: #22414e;
+  --secondary-color: #dce5e5;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  align-content: center;
+  margin: 0px auto;
+  padding: 5px auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.border-body {
+  border: 4px double black;
+  padding: 5px 5px 30px 5px;
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(21, 21, 21, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(21, 41, 49);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.box1 {
+  align-items: center;
+  justify-content: center;
+  color: whitel;
+}
+
+.hero {
+  text-align: center;
+  align-items: center;
+  justify-content: justify;
+  padding: 30px 20px;
+  color: var(--branding-color);
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--branding-color);
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 36px;
+  color: var(--branding-color);
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+}
+
+div.personal-img {
+  margin: auto auto;
+  padding: 0px 40px;
+}
+
+.content-container {
+  padding: 40px 20px;
+  margin: 10px auto;
+}
+
+.banner-info {
+  border: 3px ridge #525154;
+}
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content h2 {
+  font-size: 24px;
+  font-family: var(--default-font-family);
+}
+
+.content h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.content {
+  margin: 10px;
+}
+
+.project-desciption {
+  text-align: justify;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding:hover {
+  color: rgb(40, 76, 90);
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  background: var(--branding-color);
+  color: white;
+}
+
+.project-desciption {
+  padding: 120px 60px;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+  margin: 0px 0px;
+}
+
+.content-list-item,
+.sticky-top {
+  top: 0px;
+  background: snow;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li:hover,
+nav li.active a {
+  color: rgb(119, 159, 170);
+  font-size: 30px;
+}
+
+nav li.active a {
+  text-decoration: underline;
+  font-size: 26px;
+}
+
+footer {
+  margin: 26px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: rgb(119, 159, 170);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .project-desciption {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* zoom effect */
+.img-hover-zoom {
+  height: max-width; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.img-border {
+  border: 3px ridge #525154;
+}
+
+/*----------*/
+
+.banner-info {
+  width: 70%;
+  display: block;
+  margin: auto auto;
+  padding: auto auto;
+  text-align: center;
+  font-family: var(--default-font-family);
+  border-radius: 3px;
+}
+
+.banner-info h3 {
+  color: black;
+}
+
+.banner-info h5:hover,
+.banner-info a:hover {
+  color: rgb(119, 159, 170);
+}
+
+div.justify-content-center {
+  align-content: center;
+  text-align: center;
+  position: center;
+}
+
+ul.address li {
+  display: block;
+}
+
+li {
+  text-align: justify;
+  align-content: center;
+}
+
+.content-list-item {
+  background: transparent;
+}
+
+ul.address {
+  margin-top: 2px;
+  border-top: 2px dashed #afafaf;
+  padding-top: 2px;
+  align-content: center;
+  text-align: center;
+  position: center;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  color: white;
+  list-style-type: none;
+}
+
+ul.address-text,
+ul.address-text li {
+  padding: 5px 10px;
+  display: inline-block;
+  color: black;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ul ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+ul.address-text a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.address-text b,
+h5 {
+  padding: auto auto;
+  margin: auto auto;
+  color: black;
+}
+
+/* for the button in the footer*/
+.btn-branding1 {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding1:hover {
+  color: rgb(40, 76, 90);
+  background: inherit;
+  border: 1px solid var(--branding-color);
+}

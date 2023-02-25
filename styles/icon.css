@@ -1,0 +1,83 @@
+/* Small Screens max width 640px for icons*/
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content-icons {
+  padding: 20px 30px;
+  margin: 10px auto;
+  max-width: 70%;
+  display: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: auto;
+    height: auto;
+  }
+  .skillsGrid img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .skills {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.center {
+  text-align: center !important;
+  margin: 5px auto;
+  display: block;
+}
+
+.course-list__section {
+  border-bottom: 1px dashed #e7e0e0;
+}
+
+.course-list__section h2 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.course-list__section-inner {
+  padding: 10px auto;
+  font-size: 13px;
+}
+
+.course-list__section--border {
+  border-bottom: 1px dashed #e7e0e0;
+  padding: 1px 1px 5px 1px;
+}
+div.h4,
+div.h2:hover {
+  color: rgb(119, 159, 170);
+}
+
+.img-hover-zoom {
+  height: max-width; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
