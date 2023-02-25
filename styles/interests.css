@@ -1,7 +1,6 @@
 .content-container {
   padding: 60px 20px;
   margin: 10px auto;
-  border: 4px double black;
 }
 
 .content h1 {
@@ -31,4 +30,11 @@
 
 .content h3:hover {
   color: rgb(119, 159, 170);
+}
+
+.border-body{
+border: 4px double black;
+ background: linear-gradient(90deg, rgb(241, 248, 253) 20%, rgb(247, 252, 253) 86%);
+ padding: auto auto;
+ margin: auto auto;
 }

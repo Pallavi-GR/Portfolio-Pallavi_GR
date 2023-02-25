@@ -21,6 +21,7 @@ body {
 .border-body {
   border: 4px double black;
   padding: 5px 5px 30px 5px;
+  background: linear-gradient(90deg, rgb(241, 248, 253) 20%, rgb(247, 252, 253) 86%);
 }
 
 .body::before {
